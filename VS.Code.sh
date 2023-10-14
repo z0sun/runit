@@ -6,7 +6,7 @@ curl -fsSL https://code-server.dev/install.sh > install.sh && chmod +x install.s
 
 sudo systemctl enable --now code-server@$USER
 
-sleep 5
+sleep 1
 
 echo '''bind-addr: 0.0.0.0:8081
 auth: password
@@ -15,9 +15,6 @@ cert: false''' > ./.config/code-server/config.yaml
 
 sudo systemctl stop code-server@$USER
 
-sleep 3
+sleep 2
 
 sudo systemctl enable --now code-server@$USER
-
-sleep 3
-
