@@ -6,7 +6,7 @@ url = "https://free-nba.p.rapidapi.com/players"
 querystring = {"page": "0", "per_page": "100"}  # Increased to 100, adjust as necessary
 
 headers = {
-    "X-RapidAPI-Key": "801e9e60f4msh682ed0d41bd0b58p1947aajsn5c2668a6a34b",
+    "X-RapidAPI-Key": "",
     "X-RapidAPI-Host": "free-nba.p.rapidapi.com"
 }
 
