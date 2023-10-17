@@ -25,7 +25,8 @@ with open('processes.csv', 'w', newline='') as file:
                 'CPUUsage': proc.info['cpu_percent'],
                 'MemUsage': proc.info['memory_percent']
             })
+            print("Procceses Listed!")        
         except:
-             (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+             (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess)
           # Handle exceptions which might occur if a process ends or we do not have access
-            pass
+        pass
