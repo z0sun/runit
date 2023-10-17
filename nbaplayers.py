@@ -18,7 +18,7 @@ data = response.json()
 players = data['data']
 
 # Create the CSV file
-with open('nba_players.csv', 'w', newline='') as csvfile:
+with open('NBA.csv', 'w', newline='') as csvfile:
     fieldnames = ['player_id', 'first_name', 'last_name', 'position', 'team_name']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
@@ -32,4 +32,4 @@ with open('nba_players.csv', 'w', newline='') as csvfile:
             'team_name': player['team']['full_name']
         })
 
-print("CSV file has been created successfully!")
+print("NBA Players List!")
