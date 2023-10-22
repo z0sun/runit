@@ -29,3 +29,7 @@ sudo apt update
 ######## Install Terraform from the new repository. #######
 
 sudo apt-get install terraform
+
+touch ~/.bashrc
+
+terraform -install-autocomplete
