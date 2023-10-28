@@ -16,6 +16,25 @@ sudo apt-get update -y
 sudo apt-get install -y fontconfig openjdk-17-jre jenkins
 sudo systemctl start jenkins
 
+# Start Jenkins
+sudo systemctl start jenkins
+
+sudo apt update
+
+sudo apt install -y software-properties-common
+
+sudo add-apt-repository -y ppa:deadsnakes/ppa
+
+sudo apt install -y python3.7
+
+sudo apt install -y python3.7-venv
+
+sudo apt install -y build-essential
+
+sudo apt install -y libmysqlclient-dev
+
+sudo apt install -y python3.7-dev
+
 # Get Jenkins unlock key
 echo "Jenkins Unlock Key:"
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
