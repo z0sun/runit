@@ -19,6 +19,7 @@ sudo systemctl start jenkins
 # Start Jenkins
 sudo systemctl start jenkins
 
+# Install Python and Database
 sudo apt update
 
 sudo apt install -y software-properties-common
@@ -34,6 +35,9 @@ sudo apt install -y build-essential
 sudo apt install -y libmysqlclient-dev
 
 sudo apt install -y python3.7-dev
+
+# Install Python3 pip
+sudo apt install python3-pip -y
 
 # Get Jenkins unlock key
 echo "Jenkins Unlock Key:"
