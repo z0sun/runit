@@ -1,7 +1,9 @@
 #!/bin/bash
 
 ######## Install HashiCorp's Debian package repository #########
+sudo apt update 
 
+sudo apt install -y openjdk-11-jre ## Java
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 
 ########### Install the HashiCorp GPG key. #########
