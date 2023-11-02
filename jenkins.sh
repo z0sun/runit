@@ -39,9 +39,14 @@ sudo apt install -y python3.7-dev
 # Install Python3 pip
 sudo apt install python3-pip -y
 
-# Get Jenkins unlock key
-echo "Jenkins Unlock Key:"
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+# # Get Jenkins unlock key
+# echo "Jenkins Unlock Key:"
+# sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 # Update packages
 sudo apt update -y
+#sudo apt install -y unzip
+#sudo apt install -y nginx
+#sudo cat /var/lib/jenkins/secrets/initialAdminPassword > pw.txt
+#run command to check the status of Jenkins How do I check if it is running? looking for [Active: active (running)]. What should I do if it's not?
+#systemctl status jenkins
