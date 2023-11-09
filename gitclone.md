@@ -1,0 +1,5 @@
+Making Changes and Pushing to the Repository
+
+Clone the Repository
+
+1. First, clone the repository to your local machine using: `git clone [URL of the repository]`
