@@ -1,7 +1,8 @@
 Making Changes and Pushing to the Repository
 
-1. Clone the Repository: `git clone [URL of the repository]`
-2. Change into Repository Directory: `cd [name-of-repository]`
+1. In VS code create a new directory (This will be considered the local location). This is where we will put the cloned repository `mkdir repo_name`
+2. Clone the Repository: `git clone [URL of the repository]`
+3. Change into Repository Directory: `cd [name-of-repository]`
   - while in the main branch directory `cd .git` `nano config` # This is where git links to GitHub
   - [remote "origin"] url = repo_link # link and put the remote location URL, save, and exit
   - cd back into the repo directory on the local
