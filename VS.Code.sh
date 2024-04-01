@@ -1,20 +1,20 @@
 #!/bin/bash
 
-curl -fsSL https://code-server.dev/install.sh > install.sh && chmod +x install.sh
+# Install code-server
+curl -fsSL https://code-server.dev/install.sh | sh
 
-./install.sh
-
+# Enable code-server service
 sudo systemctl enable --now code-server@$USER
 
+# Wait for the service to start
 sleep 1
 
-echo '''bind-addr: 0.0.0.0:8081
+# Configure code-server
+CONFIG_PATH="$HOME/.config/code-server/config.yaml"
+echo "bind-addr: 0.0.0.0:8081
 auth: password
-password: abcd1234                
-cert: false''' > ./.config/code-server/config.yaml
+password: abcd1234
+cert: false" > "$CONFIG_PATH"
 
-sudo systemctl stop code-server@$USER
-
-sleep 2
-
-sudo systemctl enable --now code-server@$USER
+# Restart code-server service to apply configuration changes
+sudo systemctl restart code-server@$USER
